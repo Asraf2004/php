@@ -1,0 +1,30 @@
+<?php
+
+class example{
+    
+    public function __call($fun,$arg){
+        echo "funtion name : $fun \n";
+        echo "Arguments \n";
+        print_r($arg);
+    
+    }
+    
+    public  static function __callStatic($fun,$arg){
+        echo "funtion name : $fun \n";
+        echo "Arguments \n";
+        print_r($arg);
+    
+    }
+    public static function static_fun(){
+        echo "this is static funtion\n";
+    }
+    public function another_fun(){
+        echo "this is another funtion\n";
+    }
+}
+
+$obj = new example();
+$obj-> another_fun();
+example::static_fun();
+$obj->call_funtion("ellooe","asada","adklnak");
+example::call_funtion2("elooe","aa","adkk");
