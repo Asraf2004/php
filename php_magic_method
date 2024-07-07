@@ -8,7 +8,7 @@ class example{
         print_r($arg);
     
     }
-    
+    //final push in vs code asas
     public  static function __callStatic($fun,$arg){
         echo "funtion name : $fun \n";
         echo "Arguments \n";
