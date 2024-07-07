@@ -1,9 +1,9 @@
 <?php
-//this is change method
+//this is changed in vs ocdeeded
 class example{
     
     public function __call($fun,$arg){
-        echo "funtion name : $fun \n";
+        echo "this is vs code funtion name : $fun \n";
         echo "Arguments \n";
         print_r($arg);
     
