@@ -3,23 +3,23 @@
 class example{
     
     public function __call($fun,$arg){
-        echo "this is vs code funtion name : $fun \n";
-        echo "Arguments \n";
+        echo "this is vs code funtion name : $fun <br>";
+        echo "Arguments <br>";
         print_r($arg);
     
     }
     //final push in vs code asas
     public  static function __callStatic($fun,$arg){
-        echo "funtion name : $fun \n";
-        echo "Arguments \n";
+        echo "funtion name : $fun <br>";
+        echo "Arguments <br>";
         print_r($arg);
     
     }
     public static function static_fun(){
-        echo "this is static funtion\n";
+        echo "this is static funtion<br>";
     }
     public function another_fun(){
-        echo "this is another funtion\n";
+        echo "this is another funtion<br>";
     }
 }
 
